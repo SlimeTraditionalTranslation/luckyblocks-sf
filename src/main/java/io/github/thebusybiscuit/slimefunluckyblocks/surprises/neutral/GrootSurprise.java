@@ -15,14 +15,14 @@ public final class GrootSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "I am Groot";
+		return "我是格魯特";
 	}
 
 	@Override
 	public void activate(Random random, Player p, Location l) {
 		l.getBlock().getRelative(BlockFace.DOWN).setType(Material.PODZOL);
 		l.getBlock().setType(Material.OAK_SAPLING);
-		p.sendTitle("", ChatColor.translateAlternateColorCodes('&', "&6I am Groot!"), 10, 20, 10);
+		p.sendTitle("", ChatColor.translateAlternateColorCodes('&', "&6我是格魯特!"), 10, 20, 10);
 	}
 
 	@Override

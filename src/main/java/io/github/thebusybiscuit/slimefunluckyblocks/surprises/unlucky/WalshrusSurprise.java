@@ -23,7 +23,7 @@ public final class WalshrusSurprise implements Surprise {
     private final ItemStack sword;
 
     public WalshrusSurprise() {
-        sword = new CustomItemStack(Material.GOLDEN_SWORD, "&e&lLucky Sword");
+        sword = new CustomItemStack(Material.GOLDEN_SWORD, "&e&l幸運劍");
         sword.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 10);
         sword.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 10);
         sword.addUnsafeEnchantment(Enchantment.DURABILITY, 10);
@@ -32,7 +32,7 @@ public final class WalshrusSurprise implements Surprise {
 
     @Override
     public String getName() {
-        return "Walshrus";
+        return "沃爾什魯斯";
     }
 
     @Override
@@ -47,7 +47,7 @@ public final class WalshrusSurprise implements Surprise {
         zombie.getEquipment().setItemInMainHand(sword.clone());
         zombie.getEquipment().setItemInMainHandDropChance(0F);
         zombie.setCanPickupItems(false);
-        zombie.setCustomName(ChatColor.translateAlternateColorCodes('&', "&4Walshrus"));
+        zombie.setCustomName(ChatColor.translateAlternateColorCodes('&', "&4沃爾什魯斯"));
         zombie.setCustomNameVisible(true);
     }
 

@@ -17,7 +17,7 @@ public final class LuckyLeggingsSurprise implements Surprise {
     private final ItemStack leggings;
 
     public LuckyLeggingsSurprise() {
-        leggings = new CustomItemStack(Material.DIAMOND_LEGGINGS, "&e&lLucky Leggings");
+        leggings = new CustomItemStack(Material.DIAMOND_LEGGINGS, "&e&l幸運護腿");
         leggings.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 10);
         leggings.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 10);
         leggings.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 5);
@@ -27,7 +27,7 @@ public final class LuckyLeggingsSurprise implements Surprise {
 
     @Override
     public String getName() {
-        return "Lucky Leggings";
+        return "幸運護腿";
     }
 
     @Override

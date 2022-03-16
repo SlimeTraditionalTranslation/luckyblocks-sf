@@ -14,12 +14,12 @@ public final class PotatOSSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "PotatOS";
+		return "馬鈴薯系統";
 	}
 
 	@Override
 	public void activate(Random random, Player p, Location l) {
-		l.getWorld().dropItemNaturally(l, new CustomItemStack(Material.POTATO, "&e&lPotatOS"));
+		l.getWorld().dropItemNaturally(l, new CustomItemStack(Material.POTATO, "&e&l馬鈴薯系統"));
 	}
 
 	@Override

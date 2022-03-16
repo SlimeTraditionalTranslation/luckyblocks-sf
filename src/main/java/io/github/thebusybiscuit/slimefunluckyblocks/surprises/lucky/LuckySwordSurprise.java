@@ -17,7 +17,7 @@ public final class LuckySwordSurprise implements Surprise {
 	private final ItemStack sword;
 	
 	public LuckySwordSurprise() {
-		sword = new CustomItemStack(Material.GOLDEN_SWORD, "&e&lLucky Sword");
+		sword = new CustomItemStack(Material.GOLDEN_SWORD, "&e&l幸運劍");
 		sword.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 10);
 		sword.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 10);
 		sword.addUnsafeEnchantment(Enchantment.DURABILITY, 10);
@@ -26,7 +26,7 @@ public final class LuckySwordSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Lucky Sword";
+		return "幸運劍";
 	}
 
 	@Override

@@ -24,7 +24,7 @@ public final class ReapersSurprise implements Surprise {
     private final ItemStack hoe;
 
     public ReapersSurprise() {
-        hoe = new CustomItemStack(Material.GOLDEN_HOE, "&e&lLucky Hoe");
+        hoe = new CustomItemStack(Material.GOLDEN_HOE, "&e&l幸運鋤頭");
         hoe.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 10);
         hoe.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 10);
         hoe.addUnsafeEnchantment(Enchantment.FIRE_ASPECT, 5);
@@ -33,7 +33,7 @@ public final class ReapersSurprise implements Surprise {
 
     @Override
     public String getName() {
-        return "Reapers";
+        return "收割者";
     }
 
     @Override

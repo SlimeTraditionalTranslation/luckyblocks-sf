@@ -15,7 +15,7 @@ public final class CookieSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Cookies";
+		return "餅乾";
 	}
 
 	@Override

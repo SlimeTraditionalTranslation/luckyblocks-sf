@@ -7,7 +7,7 @@ import java.util.Locale;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.logging.Level;
 
-import org.bstats.bukkit.Metrics;
+//import org.bstats.bukkit.Metrics;
 import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -104,18 +104,18 @@ public class SlimefunLuckyBlocks extends JavaPlugin implements SlimefunAddon {
         cfg = new Config(this);
 
         // Setting up bStats
-        new Metrics(this, 4858);
+        //new Metrics(this, 4858);
 
-        if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
+        /*if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
             new GitHubBuildsUpdater(this, getFile(), "TheBusyBiscuit/luckyblocks-sf/master").start();
-        }
+        }*/
 
-        ItemGroup itemGroup = new ItemGroup(new NamespacedKey(this, "lucky_blocks"), new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(TEXTURE)), "&rLucky Blocks"));
+        ItemGroup itemGroup = new ItemGroup(new NamespacedKey(this, "lucky_blocks"), new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(TEXTURE)), "&r幸運方塊"));
 
-        SlimefunItemStack luckyBlock = new SlimefunItemStack("LUCKY_BLOCK", TEXTURE, "&fLucky Block", "&7Luck: &f0");
-        SlimefunItemStack veryLuckyBlock = new SlimefunItemStack("LUCKY_BLOCK_LUCKY", TEXTURE, "&fVery lucky Block", "&7Luck: &a+80");
-        SlimefunItemStack veryUnluckyBlock = new SlimefunItemStack("LUCKY_BLOCK_UNLUCKY", TEXTURE, "&fVery unlucky Block", "&7Luck: &c-80");
-        SlimefunItemStack pandorasBox = new SlimefunItemStack("PANDORAS_BOX", "86c7dde512871bd607b77e6635ad39f44f2d5b4729e60273f1b14fba9a86a", "&5Pandora\"s Box", "&7Luck: &c&oERROR");
+        SlimefunItemStack luckyBlock = new SlimefunItemStack("LUCKY_BLOCK", TEXTURE, "&f幸運方塊", "&7幸運值: &f0");
+        SlimefunItemStack veryLuckyBlock = new SlimefunItemStack("LUCKY_BLOCK_LUCKY", TEXTURE, "&f非常幸運的幸運方塊", "&7幸運值: &a+80");
+        SlimefunItemStack veryUnluckyBlock = new SlimefunItemStack("LUCKY_BLOCK_UNLUCKY", TEXTURE, "&f非常不幸運的幸運方塊", "&7幸運值: &c-80");
+        SlimefunItemStack pandorasBox = new SlimefunItemStack("PANDORAS_BOX", "86c7dde512871bd607b77e6635ad39f44f2d5b4729e60273f1b14fba9a86a", "&5潘朵拉之盒", "&7幸運值: &c&o錯誤");
 
         // @formatter:off
         new LuckyBlock(itemGroup, luckyBlock, RecipeType.ENHANCED_CRAFTING_TABLE,
@@ -136,7 +136,7 @@ public class SlimefunLuckyBlocks extends JavaPlugin implements SlimefunAddon {
         registerDefaultSurprises();
         registerCustomSurprises();
 
-        getLogger().log(Level.INFO, "Loaded {0} different Surprises!", surprises.size());
+        getLogger().log(Level.INFO, "加載 {0} 不同的驚喜!", surprises.size());
     }
 
     private void registerDefaultSurprises() {
@@ -301,7 +301,7 @@ public class SlimefunLuckyBlocks extends JavaPlugin implements SlimefunAddon {
     public static ItemStack createPotion(Color color, PotionEffect effect, boolean lucky) {
         ItemStack potion = new ItemStack(lucky ? Material.POTION : Material.SPLASH_POTION);
         PotionMeta pm = (PotionMeta) potion.getItemMeta();
-        pm.setDisplayName(ChatColors.color((lucky ? "&6Lucky" : "&cUnlucky") + " potion"));
+        pm.setDisplayName(ChatColors.color((lucky ? "&6幸運" : "&c不幸運") + "藥水"));
         pm.setColor(color);
         pm.addCustomEffect(effect, false);
         potion.setItemMeta(pm);
@@ -358,7 +358,7 @@ public class SlimefunLuckyBlocks extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/TheBusyBiscuit/luckyblocks-sf/issues";
+        return "https://github.com/SlimeTraditionalTranslation/luckyblocks-sf/issues";
     }
 
 }

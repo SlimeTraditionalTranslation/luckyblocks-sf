@@ -17,7 +17,7 @@ public final class LuckyPickaxeSurprise implements Surprise {
 	private final ItemStack pickaxe;
 	
 	public LuckyPickaxeSurprise() {
-		pickaxe = new CustomItemStack(Material.GOLDEN_PICKAXE, "&e&lLucky Pickaxe");
+		pickaxe = new CustomItemStack(Material.GOLDEN_PICKAXE, "&e&l幸運鎬");
 		pickaxe.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
 		pickaxe.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 10);
 		pickaxe.addUnsafeEnchantment(Enchantment.DURABILITY, 10);
@@ -25,7 +25,7 @@ public final class LuckyPickaxeSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Lucky Pickaxe";
+		return "幸運鎬";
 	}
 
 	@Override

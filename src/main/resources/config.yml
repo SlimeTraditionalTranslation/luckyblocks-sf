@@ -16,9 +16,9 @@ custom:
       '1':
         type: DIAMOND_SWORD
         amount: 1
-        displayname: '&c&lExample Sword'
+        displayname: '&c&l範例劍'
         lore:
-          - '&7This is the lore.'
+          - '&7這是一條敘述.'
         enchants:
           - DAMAGE_ALL:5
   ExampleSurprise2:
@@ -32,5 +32,5 @@ custom:
     enabled: false
     lucklevel: UNLUCKY
     commands:
-      - 'tell {player} You''re a dead person now!'
+      - 'tell {player} 你現在是個死人了!'
       - 'execute as {player} run summon zombie {x} {y} {z}'

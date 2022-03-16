@@ -15,13 +15,13 @@ public final class HaySurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Hay there";
+		return "嘿 那邊的 (Hay There)";
 	}
 
 	@Override
 	public void activate(Random random, Player p, Location l) {
 		l.getWorld().dropItemNaturally(l, new ItemStack(Material.WHEAT));
-		p.sendTitle(ChatColor.translateAlternateColorCodes('&', "&bHay &rthere,"), "how's it going?", 10, 20, 10);
+		p.sendTitle(ChatColor.translateAlternateColorCodes('&', "&b嘿 &f那邊的,"), "你過的怎麼樣? (Hey與Hay發同樣的音, Hay是乾草)", 10, 20, 10);
 	}
 
 	@Override

@@ -21,7 +21,7 @@ public final class BryanZombieSurprise implements Surprise {
     private final ItemStack axe;
 
     public BryanZombieSurprise() {
-        axe = new CustomItemStack(Material.GOLDEN_AXE, "&e&lLucky Axe");
+        axe = new CustomItemStack(Material.GOLDEN_AXE, "&e&l幸運斧");
         axe.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 10);
         axe.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
         axe.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 10);
@@ -30,7 +30,7 @@ public final class BryanZombieSurprise implements Surprise {
 
     @Override
     public String getName() {
-        return "Bryan";
+        return "布萊恩";
     }
 
     @Override
@@ -41,7 +41,7 @@ public final class BryanZombieSurprise implements Surprise {
         zombie.getEquipment().setItemInMainHand(axe.clone());
         zombie.getEquipment().setItemInMainHandDropChance(0F);
         zombie.setCanPickupItems(false);
-        zombie.setCustomName(ChatColor.translateAlternateColorCodes('&', "&eBryan"));
+        zombie.setCustomName(ChatColor.translateAlternateColorCodes('&', "&e布萊恩"));
         zombie.setCustomNameVisible(true);
     }
 

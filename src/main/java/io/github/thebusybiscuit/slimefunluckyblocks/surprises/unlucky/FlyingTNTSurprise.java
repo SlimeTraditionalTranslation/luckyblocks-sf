@@ -16,7 +16,7 @@ public final class FlyingTNTSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Flying TNT";
+		return "飛行的TNT";
 	}
 
 	@Override

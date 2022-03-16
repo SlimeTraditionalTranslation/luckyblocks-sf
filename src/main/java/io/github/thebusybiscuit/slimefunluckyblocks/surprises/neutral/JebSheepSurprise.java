@@ -14,7 +14,7 @@ public final class JebSheepSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "jeb Sheep";
+		return "jeb 綿羊";
 	}
 
 	@Override

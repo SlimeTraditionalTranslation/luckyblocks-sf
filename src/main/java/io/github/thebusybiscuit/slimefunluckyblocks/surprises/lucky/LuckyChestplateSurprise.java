@@ -17,7 +17,7 @@ public final class LuckyChestplateSurprise implements Surprise {
     private final ItemStack chestplate;
 
     public LuckyChestplateSurprise() {
-        chestplate = new CustomItemStack(Material.DIAMOND_CHESTPLATE, "&e&lLucky Chestplate");
+        chestplate = new CustomItemStack(Material.DIAMOND_CHESTPLATE, "&e&l幸運胸甲");
         chestplate.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 10);
         chestplate.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 10);
         chestplate.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 5);
@@ -27,7 +27,7 @@ public final class LuckyChestplateSurprise implements Surprise {
 
     @Override
     public String getName() {
-        return "Lucky Chestplate";
+        return "幸運胸甲";
     }
 
     @Override

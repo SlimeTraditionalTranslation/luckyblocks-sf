@@ -1,5 +1,6 @@
 name: SlimefunLuckyBlocks
 version: ${project.version}
+description: 黏液科技附加 黏液幸運方塊 繁體翻譯版.
 author: TheBusyBiscuit
 website: https://github.com/TheBusyBiscuit/luckyblocks-sf/
 

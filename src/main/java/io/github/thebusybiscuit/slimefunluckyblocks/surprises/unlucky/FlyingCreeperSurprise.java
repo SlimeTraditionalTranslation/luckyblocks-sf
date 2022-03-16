@@ -16,7 +16,7 @@ public final class FlyingCreeperSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Flying Creepers";
+		return "飛行的苦力怕";
 	}
 
 	@Override

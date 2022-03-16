@@ -15,7 +15,7 @@ public final class TamedDogsSurprise implements Surprise {
 	
 	@Override
 	public String getName() {
-		return "Tamed Dogs";
+		return "訓服的狗";
 	}
 
 	@Override
